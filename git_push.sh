@@ -1,10 +1,13 @@
-git add .
+dirname=`find . -name "[*"`
+echo ${dirname:2}
+
+git add "${dirname:2}"
 
 today=`date`
 
-git commit -m "$today commit complete"
+git commit -m "${dirname:2} $today"
 git push origin master
 
-echo "> $today commit complete"
+echo "> \n $today commit complete"
 
 
