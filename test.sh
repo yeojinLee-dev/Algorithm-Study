@@ -1,3 +1,0 @@
-today=`date`
-echo $today
-
