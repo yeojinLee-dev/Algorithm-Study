@@ -1,3 +1,10 @@
 git add .
-git commit -m "풀이 커밋"
+
+today = `date`
+
+git commit -m "$(today) commit complete"
 git push origin master
+
+echo "> $(today) commit complete"
+
+
